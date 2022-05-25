@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Input</title>
+</head>
 <body>
-<input type = 'text 'id = 'userinput'></input>
-  <button onclick = buttonclicked()>ENTER</button>
-<p id = message></p>
-<script>
-  userinputjs = document.quaryselector('userinput').innertext;
-  function buttonclicked() {
-    userinputjs = userinputjs.replace('message', "content to replace it with");
-    
+ <input id="input001" type="text" />
+ <button onclick="btn001()">Enter</button>
+    <p id="message001"></p>
   
-  }
-</script>
-  
+
+
+    <script>
+      var text001;
+      var use1
+        function btn001() {
+            use1 = input001.value;
+
+            if (use1 == "11110000") {
+            text001 = "Congrats, you made it";
+            document.querySelector("#message001").textContent = text001;
+            }
+            else if (use1 == "muffin"){
+            text002 = "nice try";
+            document.querySelector("#message001").textContent = text002;
+            }
+            else if (use1 == "111000"){
+              text003 = "nice try";
+              document.querySelector("#message001").textContent = text003;
+            }
+            else {
+              text004 = "FAILURE, WRONG PASSCODE.";
+              document.querySelector("#message001").textContent = text004;
+            }
+          }
+    </script>
 </body>
 </html>
